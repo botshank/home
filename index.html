@@ -1,0 +1,79 @@
+<!--V16 ia all about solutions and shoutouts.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*element selector:div*/
+        /*Class selector inside div*/
+        .bcd{
+            color: red;
+            background-color: antiquewhite;
+        }
+
+        /*Id selector inside div*/
+        #abc{
+            font-style: italic;
+        }
+
+        /*child selector: p should just inside div i.e, child of div itself.*/
+        div>p{
+            color: blue;
+            background-color: yellow;
+        }
+        /*Descendent selector: only condition is.. p should be inside the div no matter it happens after how many indentds.*/        
+        div p{
+            color: blue;
+            background-color: yellow;
+        }
+        /* Universal Selector: applies on all over code. */
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        /* Pseudo Selectors */
+        a:link{
+            /* Before visiting */
+            color: green;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            background-color: red;/*at the time of clicking */
+        }
+        a:hover{
+            /* at time of moving cursor over */
+            font-style: italic;
+        }
+        p:first-child{
+            /* if you wanna modify only first child. */
+            background-color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <img height="280" src="Selector.png" alt="">
+    <div class="bcd">
+        I am a div having class.
+
+        <p>I am a para under div(Child para).</p>
+    </div>
+    <div id="abc">
+        I am another div having id.
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+    <div>
+        <p>I am first child.</p>
+        <p>I am second child.</p>
+        
+    </div>
+</body>
+
+</html>
